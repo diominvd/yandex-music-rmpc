@@ -90,6 +90,7 @@ bind = $mainMod, Y, exec, /path/to/script/yamusic_start.sh
 ## Project Structure
 - `yamusic_mpd.py`: Core Python logic for API interaction and file tagging.
 - `yamusic_start.sh`: Main management script (handles MPD state, MPRIS bridge, and UI).
+- `yamusic_stop.sh`: Script to stop playing and clear the queue.
 - `requirements.txt`: Python library dependencies.
 
 ## License
