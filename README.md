@@ -1,10 +1,10 @@
-# Yandex Music RMPC Bridge
+# 🎵 Yandex Music RMPC Bridge
 
 A lightweight synchronization bridge between **Yandex Music** and your local **Music Player Daemon (MPD)**. Specifically designed for users who prefer terminal-based workflows using the **rmpc** client and **Hyprland**.
 
 ![Preview](./assets/preview.jpg)
 
-## Key Features
+## ✨ Key Features
 
 - **API Integration**: Authenticates with Yandex Music to fetch your "Liked" tracks.
 - **Smart Sync**: Downloads high-quality MP3s (320kbps) only if they aren't already in your local library.
@@ -12,7 +12,7 @@ A lightweight synchronization bridge between **Yandex Music** and your local **M
 - **MPD Control**: Updates the MPD database, clears the current queue, and populates it with your synced library.
 - **TUI Frontend**: Launches the `rmpc` interface in a specialized terminal window (`kitty` by default).
 
-## Prerequisites
+## 🛠️ Prerequisites
 
 ### System Dependencies
 - **MPD**: The music player backend.
@@ -26,7 +26,7 @@ A lightweight synchronization bridge between **Yandex Music** and your local **M
 - `python-mpd2`
 - `mutagen` (for ID3 tagging)
 
-## Installation
+## 🚀 Installation
 
 ### 1. Clone the Repository
 ```bash
@@ -64,7 +64,7 @@ export YAMUSIC_DIR="~/Music/yandex-music"
 ### 6. Link to MPD
 Ensure your mpd.conf points to a directory that includes your YAMUSIC_DIR. For example, if your MPD music directory is ~/Music, the script will sync tracks to ~/Music/yandex-music.
 
-## Usage
+## 🎛️ Usage
 
 ### Manual Launch
 To sync and start the player:
@@ -87,11 +87,11 @@ Add this line to your hyprland.conf to toggle the player with a keybind:
 bind = $mainMod, Y, exec, /path/to/script/yamusic_start.sh
 ```
 
-## Project Structure
+## 📁 Project Structure
 - `yamusic_mpd.py`: Core Python logic for API interaction and file tagging.
 - `yamusic_start.sh`: Main management script (handles MPD state, MPRIS bridge, and UI).
 - `yamusic_stop.sh`: Script to stop playing and clear the queue.
 - `requirements.txt`: Python library dependencies.
 
-## License
+## 📜 License
 This project is licensed under the [MIT License](LICENSE).
