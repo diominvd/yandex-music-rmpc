@@ -93,4 +93,4 @@ bind = $mainMod, Y, exec, /path/to/script/yamusic_start.sh
 - `requirements.txt`: Python library dependencies.
 
 ## License
-MIT
+This project is licensed under the [MIT License](LICENSE).
